@@ -9,7 +9,8 @@ body {
 }
 
 .header {
-    background:black;
+    background:#696c69;
+    position:ansolute;
     height:100px;
     margin: 0;
     display: flex;
@@ -19,6 +20,19 @@ body {
     top:0;
     bottom: 20px;
 }
+
+#team{
+    position: absolute;
+    left:30px;
+    top: 30px;
+}
+
+#about{
+    position: absolute;
+    right:30px;
+    top: 30px;
+}
+
 .container1{
     margin-top: 50px;
     display:flex;
@@ -27,7 +41,7 @@ body {
 }
 
 .container1 div{
-    border:2px #ccc solid;
+    border:2px #000000 solid;
     padding:10px;
     height: 100px;
     width: 100px;
@@ -35,19 +49,24 @@ body {
 
 .box1{
     border-radius: 10%;
+    background:#f54d4d;
     width:100px;
 }
 .box2{
     border-radius: 10%;
+    background:#ffa500;
 }
 .box3{
     border-radius: 10%;
+    background:#efec57;
 }
 .box4{
     border-radius: 10%;
+    background: #62f54d;
 }
 .box5{
     border-radius: 10%;
+    background:#54cbfb;
 }
 
 video {
