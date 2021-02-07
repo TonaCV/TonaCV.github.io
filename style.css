@@ -2,29 +2,30 @@
     height: 400px
 } */
 body {
-    background: grey;
+    background-image: url("background2.jpg");
+    height: auto;
+    width: auto;
     margin:0;
     padding:0;
-    box-sizing: border-box;
 }
 
 .header {
-    background:#696c69;
-    position:ansolute;
-    height:100px;
-    margin: 0;
+    height:120px;
     display: flex;
     justify-content: center;
-    color: white;
     font-size: 30px;
-    top:0;
-    bottom: 20px;
+}
+
+a:visited{
+    color:peachpuff;
 }
 
 #team{
     position: absolute;
-    left:30px;
-    top: 30px;
+    left:50px;
+    top: 40px;
+    font-size: 30px;
+
 }
 
 #about{
