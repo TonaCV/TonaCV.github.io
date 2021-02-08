@@ -51,24 +51,24 @@ a:visited{
     width: 100px;
 }
 
-.box1{
+#box1{
     border-radius: 10%;
     background:#f54d4d;
     width:100px;
 }
-.box2{
+#box2{
     border-radius: 10%;
     background:#ffa500;
 }
-.box3{
+#box3{
     border-radius: 10%;
     background:#efec57;
 }
-.box4{
+#box4{
     border-radius: 10%;
     background: #62f54d;
 }
-.box5{
+#box5{
     border-radius: 10%;
     background:#54cbfb;
 }
