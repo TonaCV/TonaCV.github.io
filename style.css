@@ -1,69 +1,70 @@
-
+/* Margin and padding are set to 0 so that there isn't an outline around the whole website */
 body {
-    background-image: url("media/board.jpg");
-    background-size: cover;
+    background-image:url("media/board.jpg");
+    background-size:cover;
     margin:0;
     padding:0;
 }
 
+/* Header is a flex box which divides the space of the width of the page evenly between the divs inside */
 .header {
-    display: flex;
+    display:flex;
     justify-content:space-evenly;
-    align-content: stretch;
-    font-size: 30px;
-    background: black;
-    border: 2px white solid;
-    color: white;
+    align-content:stretch;
+    font-size:30px;
+    background:black;
+    border:2px white solid;
+    color:white;
 }
 
-.header div{
-    align-self: center;
-}
+/* The text inside of each div needs to be aligned to the center of each individual div */
+.header div{align-self:center;}
 
-a:link{color:white; text-decoration: none;}
-a:visited{color:white; text-decoration: none;}
-a:hover{color:white; text-decoration: underline;}
+/* Giving a specific style to the links so that they do not chane in a way I wont want them to when the user interacts with them */
+a:link{color:white; text-decoration:none;}
+a:visited{color:white; text-decoration:none;}
+a:hover{color:white; text-decoration:underline;}
 
 /*Style for the whole container. This is the box that holds the buttons*/
 .container{
-    margin-top: 20px;
+    margin-top:20px;
     display:flex;
-    justify-content: center;
-    width: 50%;
-    margin: 10px auto;
+    justify-content:center;
+    width:50%;
+    margin:10px auto;
 }
 
 /*Instructions for all of the individual boxes inside of the flexbox*/
 .container div{
-    border: 2px black solid;
-    flex-basis: 20%;
-    padding-bottom: 20%;
+    border:2px black solid;
+    flex-basis:20%;
+    padding-bottom:20%;
 }
 
+/* Creating the galleries for each of the name pages. Flex-wrap makes the images stand on top of each other instead of side to side*/
 .gallery{
-    padding-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top:10px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
-.gallery img{
-    border: 10px orange solid;
-}
+/* Colored border to give a bit more cohesion to the gallery */
+.gallery img{border:5px darkcyan solid;}
 
 /* Style for each individual box. Setting the background to be the image and making the edges round */
-#box1{border-radius: 10%;background: url("media/pen.png");background-size: cover;}
-#box2{border-radius: 10%;background: url("media/mask.png");background-size: cover;}
-#box3{border-radius: 10%;background: url("media/tp.png");background-size: cover;}
-#box4{border-radius: 10%;background: url("media/gel.png");background-size: cover;}
-#box5{border-radius: 10%;background: url("media/glasses.png");background-size: cover;}
+#box1{border-radius:10%;background:url("media/pen.png");background-size:cover;}
+#box2{border-radius:10%;background:url("media/mask.png");background-size:cover;}
+#box3{border-radius:10%;background:url("media/tp.png");background-size:cover;}
+#box4{border-radius:10%;background:url("media/gel.png");background-size:cover;}
+#box5{border-radius:10%;background:url("media/glasses.png");background-size:cover;}
 
 /* Makiing it so the boxes change when a mouse is hovered over them */
-#box1:hover {background: url('media/pengif.gif');background-size: cover;}
-#box2:hover {background: url('media/maskgif.gif');background-size: cover;}
-#box3:hover {background: url('media/tpgif.gif');background-size: cover;}
-#box4:hover {background: url('media/gelgif.gif');background-size: cover;}
-#box5:hover {background: url('media/ggif.gif');background-size: cover;}
+#box1:hover {background:url('media/pengif.gif');background-size:cover;}
+#box2:hover {background:url('media/maskgif.gif');background-size:cover;}
+#box3:hover {background:url('media/tpgif.gif');background-size:cover;}
+#box4:hover {background:url('media/gelgif.gif');background-size:cover;}
+#box5:hover {background:url('media/ggif.gif');background-size:cover;}
 
 /* Embedding the video */
 video {
