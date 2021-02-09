@@ -1,6 +1,6 @@
 
 body {
-    background-image: url("media/board.jpg");
+    background-image: url("Media/board.jpg");
     background-size: cover;
     height: auto;
     width: auto;
@@ -35,17 +35,17 @@ body {
     padding-bottom: 20%;
 }
 
-#box1{border-radius: 10%;background: url("media/pen.png");background-size: cover;}
-#box2{border-radius: 10%;background: url("media/mask.png");background-size: cover;}
-#box3{border-radius: 10%;background: url("media/tp.png");background-size: cover;}
-#box4{border-radius: 10%;background: url("media/gel.png");background-size: cover;}
-#box5{border-radius: 10%;background: url("media/glasses.png");background-size: cover;}
+#box1{border-radius: 10%;background: url("Media/pen.png");background-size: cover;}
+#box2{border-radius: 10%;background: url("Media/mask.png");background-size: cover;}
+#box3{border-radius: 10%;background: url("Media/tp.png");background-size: cover;}
+#box4{border-radius: 10%;background: url("Media/gel.png");background-size: cover;}
+#box5{border-radius: 10%;background: url("Media/glasses.png");background-size: cover;}
 
-#box1:hover {background: url('media/pengif.gif');background-size: cover;}
-#box2:hover {background: url('media/maskgif.gif');background-size: cover;}
-#box3:hover {background: url('media/tpgif.gif');background-size: cover;}
-#box4:hover {background: url('media/gelgif.gif');background-size: cover;}
-#box5:hover {background: url('media/ggif.gif');background-size: cover;}
+#box1:hover {background: url('Media/pengif.gif');background-size: cover;}
+#box2:hover {background: url('Media/maskgif.gif');background-size: cover;}
+#box3:hover {background: url('Media/tpgif.gif');background-size: cover;}
+#box4:hover {background: url('Media/gelgif.gif');background-size: cover;}
+#box5:hover {background: url('Media/ggif.gif');background-size: cover;}
 
 video {
     display:block;
