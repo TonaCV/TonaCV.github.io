@@ -2,25 +2,29 @@
 body {
     background-image: url("media/board.jpg");
     background-size: cover;
-    height: auto;
-    width: auto;
     margin:0;
     padding:0;
 }
 
 .header {
-    height:120px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-evenly;
+    align-content: stretch;
     font-size: 30px;
     background: black;
-    background-size: cover;
     border: 2px white solid;
     color: white;
 }
 
+.header div{
+    align-self: center;
+}
 
+a:link{color:white; text-decoration: none;}
+a:visited{color:white; text-decoration: none;}
+a:hover{color:white; text-decoration: underline;}
+
+/*Style for the whole container. This is the box that holds the buttons*/
 .container{
     margin-top: 20px;
     display:flex;
@@ -29,24 +33,39 @@ body {
     margin: 10px auto;
 }
 
+/*Instructions for all of the individual boxes inside of the flexbox*/
 .container div{
     border: 2px black solid;
     flex-basis: 20%;
     padding-bottom: 20%;
 }
 
+.gallery{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img{
+    border: 10px orange solid;
+}
+
+/* Style for each individual box. Setting the background to be the image and making the edges round */
 #box1{border-radius: 10%;background: url("media/pen.png");background-size: cover;}
 #box2{border-radius: 10%;background: url("media/mask.png");background-size: cover;}
 #box3{border-radius: 10%;background: url("media/tp.png");background-size: cover;}
 #box4{border-radius: 10%;background: url("media/gel.png");background-size: cover;}
 #box5{border-radius: 10%;background: url("media/glasses.png");background-size: cover;}
 
+/* Makiing it so the boxes change when a mouse is hovered over them */
 #box1:hover {background: url('media/pengif.gif');background-size: cover;}
 #box2:hover {background: url('media/maskgif.gif');background-size: cover;}
 #box3:hover {background: url('media/tpgif.gif');background-size: cover;}
 #box4:hover {background: url('media/gelgif.gif');background-size: cover;}
 #box5:hover {background: url('media/ggif.gif');background-size: cover;}
 
+/* Embedding the video */
 video {
     display:block;
     margin-left:auto;
