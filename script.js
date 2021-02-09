@@ -1,14 +1,15 @@
 console.log("hi")
 
 
-
-
-let image1 = document.getElementById('box1')
-
-image1.addEventListener('onmouseover', function(){
-  image.src = "pengif.gif"
-})
-
-image1.addEventListener('mouseout', function(){
-    image.src = "Pen.png"
-  })
+// let test = document.getElementById('pp');
+// let b1 = document.getElementById('box1')
+//
+//
+// b1.addEventListener("mouseenter", function( event ) {
+// event.target.style.background = 'url("pengif.gif")';
+// })
+//
+//
+// //
+// //
+// // gif1.addEventListener('mouseenter', function(event) {

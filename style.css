@@ -1,6 +1,4 @@
-/* img {
-    height: 400px
-} */
+
 body {
     background-image: url("board.jpg");
     background-size: cover;
@@ -23,47 +21,53 @@ a:visited{
     color:peachpuff;
 }
 
-.container1{
+.container{
     margin-top: 20px;
     display:flex;
     justify-content: center;
-    height: 100px;
+    width: 50%;
+    margin: 10px auto;
 }
 
-.container1 div{
-    border:2px #000000 solid;
-    padding:10px;
-    height: 150px;
-    width: 150px;
+.container div{
+    border: 2px black solid;
+    flex-basis: 20%;
+    padding-bottom: 20%;
 }
 
-#box1{
-    border-radius: 10%;
-    background:#f54d4d;
+#box1{border-radius: 10%;background: url("pen.png");background-size: cover;}
+#box2{border-radius: 10%;background: url("mask.png");background-size: cover;}
+#box3{border-radius: 10%;background: url("tp.png");background-size: cover;}
+#box4{border-radius: 10%;background: url("gel.png");background-size: cover;}
+#box5{border-radius: 10%;background: url("glasses.png");background-size: cover;}
 
-}
-#box2{
-    border-radius: 10%;
-    background:#ffa500;
-}
-#box3{
-    border-radius: 10%;
-    background:#efec57;
-}
-#box4{
-    border-radius: 10%;
-    background: #62f54d;
-}
-#box5{
-    border-radius: 10%;
-    background:#54cbfb;
-}
 
 video {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    margin-top: 100px;
+    margin-top: 10px;
     width:50%;
     height: 50%;
+}
+
+#box1:hover {
+  background: url('pengif.gif');
+  background-size: cover;
+}
+#box2:hover {
+  background: url('maskgif.gif');
+  background-size: cover;
+}
+#box3:hover {
+  background: url('tpgif.gif');
+  background-size: cover;
+}
+#box4:hover {
+  background: url('gelgif.gif');
+  background-size: cover;
+}
+#box5:hover {
+  background: url('ggif.gif');
+  background-size: cover;
 }
