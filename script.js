@@ -6,7 +6,7 @@ let box4 = document.getElementById("box4")
 let box5 = document.getElementById("box5")
 
 
-// Each function adds an event listener to the respective box which when clicked changes the current time of the video to the specific time to when we start 
+// Each function adds an event listener to the respective box which when clicked changes the current time of the video to the specific time to when we start moving
 box1.addEventListener('click', () =>{
     console.log("hi")
     let vid = document.getElementById('vid');
