@@ -1,0 +1,28 @@
+body{
+    background: black
+}
+
+div.block{
+    height: 500px;
+    width:50%;
+    margin:auto;
+    padding: 25px;
+}
+
+div.block1{
+    background: black;
+    border: 3p black;
+}
+div.block1{
+    background: red;
+    border: 3p black;
+}
+
+div.block2{
+    background: green;
+    border: 3p black;
+}
+div.block3{
+    background: blue;
+    border: 3p black;
+}
