@@ -67,7 +67,7 @@ body{
 }
 
 .face-top{
-    background-image: url('glasses.png');
+    background-image: url('orange.png');
     transform: rotateX( 90deg) translateZ(200px);
 }
 
@@ -77,7 +77,7 @@ body{
 }
 
 .face-right{
-    background-image: url('pen.png');
+    background-image: url('green.png');
     transform: rotateY( 90deg) translateZ(200px);
 }
 
