@@ -67,17 +67,17 @@ body{
 }
 
 .face-top{
-    background-image: url('orange.png');
+    background-image: url('orange.gif');
     transform: rotateX( 90deg) translateZ(200px);
 }
 
 .face-bottom{
-    background-image: url('tp.png');
+    background-image: url('grey.gif');
     transform: rotateX(-90deg) translateZ(200px);
 }
 
 .face-right{
-    background-image: url('green.png');
+    background-image: url('green.gif');
     transform: rotateY( 90deg) translateZ(200px);
 }
 
