@@ -2,7 +2,10 @@ body{
     background: black
 }
 
-div.block{
+.rover{
+    background: black;
+}
+/* div.block{
     height: 500px;
     width:50%;
     margin:auto;
@@ -25,4 +28,4 @@ div.block2{
 div.block3{
     background: blue;
     border: 3p black;
-}
+} */
