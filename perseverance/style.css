@@ -1,0 +1,55 @@
+body{
+    background-image: url('background.jpg');
+    margin:0;
+}
+
+
+svg{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.typewriter {
+    font-family: Courier, monospace;
+	display: inline-block;
+    height: 1000px;
+    width: 1200px;
+    background: orange;
+    opacity: 0.9;
+    position: absolute;
+    right:0;
+    top:0;
+}
+
+.typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(70, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from {
+        width: 0%
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
