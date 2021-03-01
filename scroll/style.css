@@ -5,8 +5,12 @@ body{
 .rover{
     background: black;
 }
-/* div.block{
-    height: 500px;
+
+div.block{
+    height: 600px;
+    background-image: url('arrow.png');
+    background-size:contain;
+    background-repeat: no-repeat;
     width:50%;
     margin:auto;
     padding: 25px;
@@ -17,15 +21,21 @@ div.block1{
     border: 3p black;
 }
 div.block1{
-    background: red;
+    background: url('expec.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 3p black;
 }
 
 div.block2{
-    background: green;
+    background: url('real.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 3p black;
 }
 div.block3{
-    background: blue;
+    background: url('cry.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
     border: 3p black;
-} */
+}
