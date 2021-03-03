@@ -45,11 +45,11 @@ function goBack() {
 
 // This function checks if the face being displayed is not the front face, so as
 // to trigger the function that returns to the front face. The timerCount and
-// setTimeout is used to return to the front face 7 seconds after the last panel
+// setTimeout is used to return to the front face 5 seconds after the last panel
 // was selected.
 function goHappyTime() {
   if (showClass != 'show-front') {
   timerCount++;
-  setTimeout(goBack, 7000);
+  setTimeout(goBack,5000);
   }
 }
