@@ -1,0 +1,58 @@
+body{
+    background-color: white;
+    background-size: contain;
+    transition: 0.5s linear all;
+}
+
+.start{
+    position: absolute;
+    width: 100px;
+    top: 45%;
+    left: 48%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+.flute {
+    position: absolute;
+    background-image: url("flute.jpg");
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 30%;
+    border: 2px solid black;
+}
+
+.sax {
+    position: absolute;
+    background-image: url("sax.png");
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 60%;
+    border: 2px solid black;
+}
+
+.drums {
+    position: absolute;
+    background-image: url("drums.png");
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 30%;
+    border: 2px solid black;
+}
+
+.banjo {
+    position: absolute;
+    background-image: url("banjo.png");
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    top: 20%;
+    left: 60%;
+    border: 2px solid black;
+}
