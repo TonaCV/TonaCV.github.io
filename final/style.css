@@ -17,15 +17,17 @@ body{
 }
 
 nav{
-    background: #fee440;
+    background: black;
     grid-area:nav;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 h1{
     animation: portfolioh1 5s linear infinite alternate;
-    font-size: 3vh;
+    font-size: 5vh;
+    margin: 0px;
 }
 
 @keyframes portfolioh1 {
@@ -83,6 +85,8 @@ h1{
     height: 100%;
     backface-visibility: hidden;
     background: #00bbf9;
+    background-image: url("syl.jpg");
+    background-size: contain;
     color:#333;
 }
 
@@ -118,6 +122,8 @@ h1{
     height: 100%;
     backface-visibility: hidden;
     background: #00bbf9;
+    background-image: url("syl.jpg");
+    background-size: contain;
     color:#333;
 }
 
@@ -152,6 +158,8 @@ h1{
     height: 100%;
     backface-visibility: hidden;
     background: #00bbf9;
+    background-image: url("syl.jpg");
+    background-size: contain;
     color:#333;
 }
 
@@ -187,7 +195,6 @@ h1{
     backface-visibility: hidden;
     background-image: url("syl.jpg");
     background-size: contain;
-    color:#333;
 }
 
 #content4_back{
