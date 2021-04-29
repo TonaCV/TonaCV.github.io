@@ -75,9 +75,9 @@ h1{
     transition: all 0.5s ease;
 }
 
-#content1_card:hover{
+/* #content1_card:hover{
     transform: rotateY(180deg);
-}
+} */
 
 #content1_front{
     position: absolute;
@@ -112,9 +112,9 @@ h1{
     transition: all 0.5s ease;
 }
 
-#content2_card:hover{
+/* #content2_card:hover{
     transform: rotateY(180deg);
-}
+} */
 
 #content2_front{
     position: absolute;
@@ -148,9 +148,9 @@ h1{
     transition: all 0.5s ease;
 }
 
-#content3_card:hover{
+/* #content3_card:hover{
     transform: rotateY(180deg);
-}
+} */
 
 #content3_front{
     position: absolute;
@@ -184,9 +184,9 @@ h1{
     transition: all 0.5s ease;
 }
 
-#content4_card:hover{
+/* #content4_card:hover{
     transform: rotateY(180deg);
-}
+} */
 
 #content4_front{
     position: absolute;
