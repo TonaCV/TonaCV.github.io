@@ -145,28 +145,28 @@ h1{
 }
 
 .circle_30MFF{
-    background-image: url("30mff.png");
+    background-image: url("30mff.PNG");
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
 .circle_mung{
-    background-image: url("mung.png");
+    background-image: url("mung.PNG");
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
 .circle_buzz{
-    background-image: url("buzz.png");
+    background-image: url("buzz.PNG");
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
 }
 
 .circle_food{
-    background-image: url("food.png");
+    background-image: url("food.PNG");
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
