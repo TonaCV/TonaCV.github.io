@@ -110,7 +110,31 @@ h2:hover{
 }
 
 /* Div that holds the faces of the card */
-#content_card{
+#content1_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content2_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content3_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content4_card{
     position: relative;
     width: 100%;
     height: 100%;
