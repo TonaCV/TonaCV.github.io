@@ -1,4 +1,6 @@
 
+// Getting the parent div and the card to animate the flip
+// Need the parent div to avoid issues with the animation
 const parent1 = document.getElementById('content1');
 const flip1 = document.getElementById('content1_card');
 const parent2 = document.getElementById('content2');
@@ -41,19 +43,25 @@ parent4.addEventListener('mouseleave', e => {
   flip4.style.transform = 'rotateY(0deg)';
 });
 
+// funtion to get a random integer
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
+
+// Animation for each of the cubes
+// Getting random values for the movement of the cubes
+// using anime.js library
+
 anime({
   targets: '.cube1',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -65,12 +73,12 @@ anime({
 anime({
   targets: '.cube2',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -82,12 +90,12 @@ anime({
 anime({
   targets: '.cube3',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -99,12 +107,12 @@ anime({
 anime({
   targets: '.cube4',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -116,12 +124,12 @@ anime({
 anime({
   targets: '.cube5',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -133,12 +141,12 @@ anime({
 anime({
   targets: '.cube6',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -150,12 +158,12 @@ anime({
 anime({
   targets: '.cube7',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -167,12 +175,12 @@ anime({
 anime({
   targets: '.cube8',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -184,12 +192,12 @@ anime({
 anime({
   targets: '.cube9',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -201,12 +209,12 @@ anime({
 anime({
   targets: '.cube10',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -218,12 +226,12 @@ anime({
 anime({
   targets: '.cube11',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -235,12 +243,12 @@ anime({
 anime({
   targets: '.cube12',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -252,12 +260,12 @@ anime({
 anime({
   targets: '.cube13',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -269,12 +277,12 @@ anime({
 anime({
   targets: '.cube14',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -286,12 +294,12 @@ anime({
 anime({
   targets: '.cube15',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
@@ -303,12 +311,12 @@ anime({
 anime({
   targets: '.cube16',
   keyframes: [
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-80)},
-      {translateY: getRndInteger(-((screen.height/2)-100), (screen.height/2)-100)},
-      {translateX: getRndInteger(-((screen.width/2)-100), (screen.width/2)-100)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
+      {translateY: getRndInteger(-(window.innerHeight/2), window.innerHeight/2)},
+      {translateX: getRndInteger(-(window.innerWidth/2), window.innerWidth/2)},
   ],
   rotateZ:360,
   duration:5000,
