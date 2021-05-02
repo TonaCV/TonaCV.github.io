@@ -1,0 +1,235 @@
+body{
+    padding:0px;
+    margin:0px;
+    background-color: black;
+}
+
+.container{
+    display: grid;
+    height:100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr .9fr .9fr;
+    grid-template-areas:
+        "nav nav"
+        "content1 content2"
+        "content3 content4";
+    grid-gap: 0.2rem;
+}
+
+nav{
+    grid-area:nav;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    animation: portfolioh1 5s linear infinite alternate;
+    font-size: 5vh;
+    color: white;
+    margin: 0px;
+}
+
+h2{
+    display: block;
+    color: white;
+    font-size: 5vh;
+    /* padding: 1%; */
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+h3{
+color: white;
+font-size: 4vh;
+text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+h4{
+color: white;
+font-size: 3vh;
+text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+a{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+a:link, a:visited{
+    color: white;
+    font-size: 3vh;
+}
+
+h2:hover{
+    animation: color_change 3s infinite;
+}
+
+@keyframes color_change {
+   0% { color: #FF3333; }
+  25% { color: #00FFFF; }
+  50% { color: #33FF33; }
+  75% { color: #FF9933; }
+  100% {color: #FF33FF; }
+}
+
+#content1{
+    grid-area:content1;
+}
+
+#content2{
+    grid-area:content2;
+}
+
+#content3{
+    grid-area:content3;
+}
+
+#content4{
+    grid-area:content4;
+}
+
+@media only screen and (max-width:550px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2fr 2fr 2fr 2fr;
+        grid-template-areas:
+          "nav"
+          "content1"
+          "content2"
+          "content3"
+          "content4"
+    }
+
+    h2{
+        font-size: 2vh;
+    }
+}
+
+#content1_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content2_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content3_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content4_card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+#content_front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+#circle{
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    height: 65%;
+    width: 30%;
+    border-radius: 50%;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    border: 5px white solid;
+}
+
+#name_card{
+    z-index: 10;
+}
+
+#content_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+
+.circle_30MFF{
+    background-image: url("30mff.PNG");
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.circle_mung{
+    background-image: url("mung.PNG");
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.circle_buzz{
+    background-image: url("buzz.PNG");
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.circle_food{
+    background-image: url("food.PNG");
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+
+
+#cube{
+    position: absolute;
+    background-color: #0f0;
+    top:50%;
+    left:49.2%;
+    height: 30px;
+    width: 30px;
+    box-shadow: 0 0 50px #0f0,
+                0 0 100px #0f0,
+                0 0 150px #0f0,
+                0 0 200px #0f0,
+                0 0 250px #0f0;
+    animation: glow 5s linear infinite, move 5s linear infinite;
+}
+
+
+@keyframes glow {
+    0%{
+        filter: hue-rotate(0deg);
+        transform:
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
