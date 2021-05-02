@@ -1,4 +1,6 @@
 
+// Getting the parent div and the card to animate the flip
+// Need the parent div to avoid issues with the animation
 const parent1 = document.getElementById('content1');
 const flip1 = document.getElementById('content1_card');
 const parent2 = document.getElementById('content2');
@@ -41,9 +43,15 @@ parent4.addEventListener('mouseleave', e => {
   flip4.style.transform = 'rotateY(0deg)';
 });
 
+// funtion to get a random integer
 function getRndInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+
+// Animation for each of the cubes
+// Getting random values for the movement of the cubes
+// using anime.js library
 
 anime({
   targets: '.cube1',

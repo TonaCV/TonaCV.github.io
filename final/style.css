@@ -3,7 +3,7 @@ body{
     margin:0px;
     background-color: black;
 }
-
+/* Container for the grid */
 .container{
     display: grid;
     height:100vh;
@@ -16,6 +16,7 @@ body{
     grid-gap: 0.2rem;
 }
 
+/* Navigation bar */
 nav{
     grid-area:nav;
     display: flex;
@@ -54,11 +55,13 @@ a{
     padding-right: 5px;
 }
 
+/* Link format */
 a:link, a:visited{
     color: white;
     font-size: 3vh;
 }
 
+/* Hover animation for card covers */
 h2:hover{
     animation: color_change 3s infinite;
 }
@@ -71,6 +74,7 @@ h2:hover{
   100% {color: #FF33FF; }
 }
 
+/* Linking divs to their specific area on the grid */
 #content1{
     grid-area:content1;
 }
@@ -87,6 +91,7 @@ h2:hover{
     grid-area:content4;
 }
 
+/* Making the site responsive */
 @media only screen and (max-width:550px){
     .container{
         grid-template-columns: 1fr;
@@ -104,7 +109,8 @@ h2:hover{
     }
 }
 
-#content1_card{
+/* Div that holds the faces of the card */
+#content_card{
     position: relative;
     width: 100%;
     height: 100%;
@@ -112,30 +118,7 @@ h2:hover{
     transition: all 1s ease;
 }
 
-#content2_card{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-}
-
-#content3_card{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-}
-
-#content4_card{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 1s ease;
-}
-
+/* Front face of the card */
 #content_front{
     position: absolute;
     width: 100%;
@@ -149,6 +132,19 @@ h2:hover{
     transform-style: preserve-3d;
 }
 
+/* Back face of the card */
+#content_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    transform: rotateY(180deg);
+    text-align: center;
+}
+
+/* Circle that holds the image in the front face */
 #circle{
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
     height: 65%;
@@ -162,22 +158,9 @@ h2:hover{
     border: 5px white solid;
 }
 
-#name_card{
-    z-index: 10;
-}
-
-#content_back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-    transform: rotateY(180deg);
-    text-align: center;
-}
 
 
+/* Images in each of the circles */
 .circle_30MFF{
     background-image: url("30mff.PNG");
     -moz-background-size: 100% 100%;
@@ -207,7 +190,7 @@ h2:hover{
 }
 
 
-
+/* Making the cubes appear to be glowing by giving them shadows */
 #cube{
     position: absolute;
     background-color: #0f0;
@@ -220,10 +203,10 @@ h2:hover{
                 0 0 150px #0f0,
                 0 0 200px #0f0,
                 0 0 250px #0f0;
-    animation: glow 5s linear infinite, move 5s linear infinite;
+    animation: glow 1s linear infinite;
 }
 
-
+/* Rotating the hue makes the color of the cube change */
 @keyframes glow {
     0%{
         filter: hue-rotate(0deg);
