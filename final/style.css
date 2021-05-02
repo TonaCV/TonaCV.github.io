@@ -1,7 +1,6 @@
 body{
     padding:0px;
     margin:0px;
-    /* background: radial-gradient(at 50% -20%, #ffd89b, #19547b ); */
     background-color: black;
 }
 
@@ -31,12 +30,46 @@ h1{
     margin: 0px;
 }
 
-/* @keyframes portfolioh1 {
-   0% { color: red; }
-  25% { color: blue; }
-  50% { color: green; }
-  75% { color: orange; }
- 100% {color: purple; } */
+h2{
+    display: block;
+    color: white;
+    font-size: 5vh;
+    padding: 1%;
+    text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+h3{
+color: white;
+font-size: 5vh;
+padding: 1%;
+text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+h4{
+color: white;
+font-size: 3vh;
+text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+a{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+a:link, a:visited{
+    color: white;
+    font-size: 3vh;
+}
+
+h2:hover{
+    animation: color_change 3s infinite;
+}
+
+@keyframes color_change {
+   0% { color: #FF3333; }
+  25% { color: #00FFFF; }
+  50% { color: #33FF33; }
+  75% { color: #FF9933; }
+  100% {color: #FF33FF; }
 }
 
 #content1{
@@ -65,6 +98,10 @@ h1{
           "content2"
           "content3"
           "content4"
+    }
+
+    h2{
+        font-size: 2vh;
     }
 }
 
@@ -138,11 +175,9 @@ h1{
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     transform: rotateY(180deg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    text-align: center;
 }
+
 
 .circle_30MFF{
     background-image: url("30mff.PNG");
@@ -172,24 +207,28 @@ h1{
     background-size: 100% 100%;
 }
 
-.worm{
+
+
+#cube{
     position: absolute;
     background-color: #0f0;
+    top:50%;
+    left:49.2%;
     height: 30px;
     width: 30px;
-    top: 100px;
-    left:100px;
     box-shadow: 0 0 50px #0f0,
                 0 0 100px #0f0,
                 0 0 150px #0f0,
                 0 0 200px #0f0,
                 0 0 250px #0f0;
-    animation: glow 5s linear infinite;
+    animation: glow 5s linear infinite, move 5s linear infinite;
 }
+
 
 @keyframes glow {
     0%{
         filter: hue-rotate(0deg);
+        transform:
     }
     100%{
         filter: hue-rotate(360deg);
